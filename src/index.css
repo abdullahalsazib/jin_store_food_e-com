@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --color-h-background: #634C9F;
+  --color-h-stock: #E5E7EB;
+  --color-input-background: #F3F4F6;
+  --font-f-playwrite: "Playwrite IT Moderna", cursive;
+  --font-f-opensans: "Open Sans", sans-serif;
+}
+
+@layer utilities {
+  .d-center {
+    @apply flex items-center justify-center;
+  }
+  
+  .d-between {
+    @apply flex items-center justify-between;
+  }
+}
+.notification_tooltip {
+  @apply text-white text-sm bg-violet-500 px-2 py-1 rounded-lg hover:bg-violet-400 duration-300 cursor-pointer;
+}
+/* 
+.d-center{
+  @apply flex items-center justify-center;
+}
+.d-between{
+  @apply flex items-center justify-between;
+} */
