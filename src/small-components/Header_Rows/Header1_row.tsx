@@ -39,7 +39,7 @@ const Header1_row = () => {
 
 export default Header1_row;
 
-const Icons_btn: React.FC<{
+export const Icons_btn: React.FC<{
   icon?: React.ReactNode;
   label: string;
   onClick?: () => void;
