@@ -48,7 +48,7 @@ export const Icons_btn: React.FC<{
     <>
       <button
         onClick={onClick}
-        className=" flex items-center gap-1 cursor-pointer text-sm"
+        className=" flex items-center gap-1 cursor-pointer text-sm text-slate-600 hover:text-slate-800 duration-200"
       >
         {label} {icon}
       </button>

@@ -3,13 +3,21 @@
 @import "tailwindcss";
 
 @theme {
+  --color-text-black: #030712;
+  --color-text-white: #ffffff;
+  --color-text-gray: #e5e7eb;
+  --color-text-white-gray: #d1d5db;
+  --color-text-gray-black: #111827;
+  --color-text-primary: #1d4ed8;
+  --color-text-secondary: #9ca3af;
+  --color-text-violet: #634c9f;
   --color-h-background: #634c9f;
   --color-h-stock: #e5e7eb;
   --color-a-red: #dc2626;
   --color-input-background: #f3f4f6;
   --font-f-playwrite: "Playwrite IT Moderna", cursive;
   --font-f-opensans: "Open Sans", sans-serif;
-  --color-a-liner-gradient: linear-gradient(90deg, #FFC0CB 0%, #FFB6C1 100%);
+  --color-a-liner-gradient: linear-gradient(90deg, #ffc0cb 0%, #ffb6c1 100%);
 }
 
 @layer utilities {
@@ -33,3 +41,25 @@
 } */
 
 /* Link */
+
+
+
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8C7AE6; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #634C9F; /* Color when hovered */
+}

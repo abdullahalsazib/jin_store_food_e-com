@@ -1,17 +1,12 @@
-import Header1_row from "./small-components/Header_Rows/Header1_row";
-import Header2_row from "./small-components/Header_Rows/Header2_row";
-import Notification from "./small-components/Notification";
-import Topber from "./small-components/Topber";
+import Nav_Layout from "./components/Nav_Layout";
+import Login from "./components/Sign_up_in/Login";
 
 const App = () => {
   return (
     <>
-      <div>
-        <Notification />
-        <Header1_row />
-        <Topber />
-        <Header2_row />
-        <h1>App</h1>
+      <Nav_Layout />
+      <div className=" w-full h-full">
+        <Login/>
       </div>
     </>
   );
