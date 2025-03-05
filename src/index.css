@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
 
 @import "tailwindcss";
 
-@theme{
-  --color-h-background: #634C9F;
-  --color-h-stock: #E5E7EB;
-  --color-input-background: #F3F4F6;
+@theme {
+  --color-h-background: #634c9f;
+  --color-h-stock: #e5e7eb;
+  --color-a-red: #dc2626;
+  --color-input-background: #f3f4f6;
   --font-f-playwrite: "Playwrite IT Moderna", cursive;
   --font-f-opensans: "Open Sans", sans-serif;
+  --color-a-liner-gradient: linear-gradient(90deg, #FFC0CB 0%, #FFB6C1 100%);
 }
 
 @layer utilities {
   .d-center {
     @apply flex items-center justify-center;
   }
-  
+
   .d-between {
     @apply flex items-center justify-between;
   }
@@ -29,3 +31,5 @@
 .d-between{
   @apply flex items-center justify-between;
 } */
+
+/* Link */

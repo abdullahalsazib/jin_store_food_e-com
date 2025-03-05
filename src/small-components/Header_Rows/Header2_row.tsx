@@ -34,6 +34,17 @@ const Header2_row = () => {
           <li>
             <Icons_btn icon={<IoIosArrowDown />} label="Trending Products" />
           </li>
+          <li>
+            <a
+              href="#"
+              className="text-sm flex items-center justify-center gap-1"
+            >
+              {" "}
+              <p className=" text-a-red">Almost Finished</p>
+              <span className=" uppercase text-white text-[9px] font-semibold rounded-md  py-1 px-2 bg-a-red">sale</span>{" "}
+              <IoIosArrowDown />{" "}
+            </a>
+          </li>
         </ul>
       </div>
     </>
