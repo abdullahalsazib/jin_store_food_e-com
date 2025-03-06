@@ -19,16 +19,16 @@ const Login = () => {
             <div className="flex justify-center gap-4 text-xl md:text-3xl">
               <button
                 onClick={() => setLogin(true)}
-                className={`cursor-pointer ${
-                  useLogin ? "text-gray-800" : "text-gray-400"
+                className={`cursor-pointer! ${
+                  useLogin ? "text-gray-800" : "text-gray-400 hover:text-gray-600 duration-150 active:scale-95 "
                 }`}
               >
                 Login
               </button>
               <button
                 onClick={() => setLogin(false)}
-                className={`cursor-pointer ${
-                  !useLogin ? "text-gray-800" : "text-gray-400"
+                className={`cursor-pointer! ${
+                  !useLogin ? "text-gray-800" : "text-gray-400 hover:text-gray-600 duration-150 active:scale-95 "
                 }`}
               >
                 Register
