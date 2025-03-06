@@ -104,3 +104,14 @@ docker run -p 3000:3000 jin_store_food_e-com
 - Project Maintainer: [Your Name]
 - Email: [Your Email]
 - Website: [Your Website]
+
+
+
+## 📌 75+ Ecommerce Landing Page Templates  
+[View on Figma](https://www.figma.com/design/mabt2U0xxd5Lr8jAhLAGqj/75%2B-Ecommerce-Landing-Page-Templates-(Community)?node-id=6314-2751&t=PHC4RZiKnyH0tLgT-4)  
+<center>
+
+  
+![Figma Preview](https://i.ibb.co.com/TMS2ssFt/image.png)  
+
+</center>
