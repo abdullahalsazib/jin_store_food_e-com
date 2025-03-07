@@ -1,3 +1,4 @@
+import Main_Footer from "./components/Main_Footer";
 import Nav_Layout from "./components/Nav_Layout";
 import My_Account from "./components/Sign_up_in/My_Account";
 // import Sign from "./components/Sign_up_in/Sign";
@@ -7,12 +8,13 @@ const App = () => {
   return (
     <>
       <Nav_Layout />
-      <div className=" w-full h-full">
+      <div className=" w-full ">
         <My_Account>
           {/* <Sign/> */}
-          <Vendor_Admin_Dashbord/>
+          <Vendor_Admin_Dashbord />
         </My_Account>
       </div>
+      <Main_Footer />
     </>
   );
 };
