@@ -1,6 +1,7 @@
 import React from "react";
 import { BiGitCompare, BiUserMinus } from "react-icons/bi";
 import { LabelInput, RememberMe } from "./Sign";
+import { CgLogOut } from "react-icons/cg";
 
 const Vendor_Admin_Dashboard = () => {
   // Sidebar Data
@@ -12,6 +13,7 @@ const Vendor_Admin_Dashboard = () => {
     { title: "Wishlist", icon: null },
     { title: "Compare", icon: <BiGitCompare className=" text-2xl" /> },
     { title: "Address", icon: null },
+    { title: "Log Out", icon: <CgLogOut className=" text-2xl" /> },
   ];
 
   return (
@@ -42,7 +44,9 @@ const Vendor_Admin_Dashboard = () => {
         <div className="w-[80%]">
           {/* Content */}
           <div className="w-full h-full bg-white px-5 rounded-lg">
-            <h1 className="text-xl font-bold">Update account to Vendor</h1>
+            <h1 className="text-2xl font-semibold font-f-playwrite">
+              Update account to Vendor
+            </h1>
             <form className="flex items-start justify-center flex-col gap-2 py-3 text-2xl!">
               <LabelInput
                 label="First Name"
