@@ -1,6 +1,7 @@
 import { BsTelephone } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-
+import playstor from "../assets/playstor.svg";
+import appstore from "../assets/appstore.svg";
 const footerLinks = [
   { name: "Sell on Grogin", url: "/sell-on-grogin" },
   { name: "Sell Your Services on Grogin", url: "/sell-services" },
@@ -142,7 +143,11 @@ const Main_Footer = () => {
           </div>
           {/* fot icons to install */}
           <div>
-            <h1>Let Us Help You</h1>
+            <h1>Download our app</h1>
+            <div className=" flex flex-col items-start justify-start gap-2 py-3">
+              <img src={playstor} alt="playstor" />
+              <img src={appstore} alt="appstore" />
+            </div>
           </div>
         </div>
       </div>
