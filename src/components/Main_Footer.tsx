@@ -2,6 +2,11 @@ import { BsTelephone } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import playstor from "../assets/playstor.svg";
 import appstore from "../assets/appstore.svg";
+
+import facebookIcon from "../assets/Icon/facebook.svg";
+import twitterIcon from "../assets/Icon/twitter.svg";
+import instagramIcon from "../assets/Icon/instagram.svg";
+import linkedinIcon from "../assets/Icon/linkedin.svg";
 const footerLinks = [
   { name: "Sell on Grogin", url: "/sell-on-grogin" },
   { name: "Sell Your Services on Grogin", url: "/sell-services" },
@@ -35,7 +40,7 @@ const footerLinks3 = [
 const Main_Footer = () => {
   return (
     <>
-      <div className=" w-full px-[10%] py-5 ">
+      <div className=" w-full px-[10%] py-5 bg-[#F3F4F6]">
         <div className=" flex items-center justify-between border-b-2 border-h-stock py-20">
           <div className=" flex items-start justify-center flex-col gap-2 ">
             <h1 className=" text-2xl font-f-playwrite font-extrabold">
@@ -145,8 +150,51 @@ const Main_Footer = () => {
           <div>
             <h1>Download our app</h1>
             <div className=" flex flex-col items-start justify-start gap-2 py-3">
-              <img src={playstor} alt="playstor" />
-              <img src={appstore} alt="appstore" />
+              <div className=" flex flex-row gap-2">
+                <img src={playstor} alt="playstor" />
+                <p className=" text-xs text-left text-text-secondary">
+                  Download App Get -10% Discount
+                </p>
+              </div>
+              <div className=" flex flex-row gap-2">
+                <img src={appstore} alt="appstore" />
+                <p className=" text-xs text-left text-text-secondary">
+                  Download App Get -10% Discount
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3>Follow us on social media:</h3>
+              <div className=" flex flex-row gap-2">
+                <a href="#">
+                  <img
+                    className=" bg-white p-4 cursor-pointer rounded-lg"
+                    src={facebookIcon}
+                    alt="facebook"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    className=" bg-white p-4 cursor-pointer rounded-lg"
+                    src={twitterIcon}
+                    alt="twitter"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    className=" bg-white p-4 cursor-pointer rounded-lg"
+                    src={instagramIcon}
+                    alt="instagram"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    className=" bg-white p-4 cursor-pointer rounded-lg"
+                    src={linkedinIcon}
+                    alt="linkedin"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
