@@ -7,6 +7,28 @@ import facebookIcon from "../assets/Icon/facebook.svg";
 import twitterIcon from "../assets/Icon/twitter.svg";
 import instagramIcon from "../assets/Icon/instagram.svg";
 import linkedinIcon from "../assets/Icon/linkedin.svg";
+
+import icon3 from "../assets/for_pay/icon3.svg";
+import paypal from "../assets/for_pay/paypal.svg";
+import visa from "../assets/for_pay/visa.svg";
+import skrill from "../assets/for_pay/skrill.svg";
+import mastercard from "../assets/for_pay/mastercard.svg";
+
+
+const footerlinelink = [
+  { name: "Terms and Conditions", url: "/#" },
+  { name: "Privacy Policy", url: "/#" },
+  { name: "Order Ttacking", url: "/#" },
+];
+
+const footerPaymentIcons = [
+  { name: "icon3", url: icon3 },
+  { name: "paypal", url: paypal },
+  { name: "visa", url: visa },
+  { name: "skrill", url: skrill },
+  { name: "mastercard", url: mastercard },
+];
+
 const footerLinks = [
   { name: "Sell on Grogin", url: "/sell-on-grogin" },
   { name: "Sell Your Services on Grogin", url: "/sell-services" },
@@ -196,6 +218,36 @@ const Main_Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div className=" py-10  ">
+          <div className=" flex items-center justify-between gap-5">
+            <p className=" text-text-secondary text-sm text-left">
+              Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right
+              reserved. Powered by{" "}
+              <span className=" text-text-primary">BlackRise Themes</span>.
+            </p>
+            <div className=" flex items-center justify-center gap-3">
+              {footerlinelink.map((link, index) => (
+                <a
+                  href={link.url}
+                  className="text-text-secondary text-sm text-left underline hover:text-black duration-150"
+                  key={index}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className=" flex items-start justify-start w-full">
+            {footerPaymentIcons.map((icon, index) => (
+              <img
+                className=" w-20 h-20 p-3 "
+                src={icon.url}
+                alt={icon.name}
+                key={index}
+              />
+            ))}
           </div>
         </div>
       </div>
