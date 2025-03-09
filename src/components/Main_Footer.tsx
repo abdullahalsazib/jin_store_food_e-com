@@ -13,7 +13,7 @@ import paypal from "../assets/for_pay/paypal.svg";
 import visa from "../assets/for_pay/visa.svg";
 import skrill from "../assets/for_pay/skrill.svg";
 import mastercard from "../assets/for_pay/mastercard.svg";
-
+import { CgCopyright } from "react-icons/cg";
 
 const footerlinelink = [
   { name: "Terms and Conditions", url: "/#" },
@@ -223,8 +223,8 @@ const Main_Footer = () => {
         <div className=" py-10  ">
           <div className=" flex items-center justify-between gap-5">
             <p className=" text-text-secondary text-sm text-left">
-              Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right
-              reserved. Powered by{" "}
+              opyright 2025 <CgCopyright /> Jinstore WooCommerce WordPress
+              Theme. All right reserved. Powered by{" "}
               <span className=" text-text-primary">BlackRise Themes</span>.
             </p>
             <div className=" flex items-center justify-center gap-3">

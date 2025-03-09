@@ -5,7 +5,7 @@ import { Icons_btn } from "./Header1_row";
 const Header2_row = () => {
   return (
     <>
-      <div className=" d-between xl:px-32 py-2 font-f-opensans border-b-[1px] border-t-[1px] border-h-stock ">
+      <div className=" d-between  py-3 font-f-opensans border-b-[1px] border-t-[1px] border-h-stock ">
         <ul className=" flex flex-row items-center justify-center gap-3 text-sm font-semibold">
           <li>
             <a href="#">
