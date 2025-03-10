@@ -2,10 +2,14 @@ import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Icons_btn } from "./Header1_row";
 
-const Header2_row = () => {
+const Header2_row: React.FC<{
+  className?: string;
+}> = ({ className }) => {
   return (
     <>
-      <div className=" d-between  py-3 font-f-opensans border-b-[1px] border-t-[1px] border-h-stock ">
+      <div
+        className={` d-between  py-3 font-f-opensans border-b-[1px] border-t-[1px] border-h-stock ${className}`}
+      >
         <ul className=" flex flex-row items-center justify-center gap-3 text-sm font-semibold">
           <li>
             <a href="#">

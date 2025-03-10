@@ -62,8 +62,8 @@ const Home = () => {
             {/* jack */}
           </div>
         </div>
-        <div className=" h-screen w-[70%]">
-          <Header2_row />
+        <div className=" h-screen w-[70%] ">
+          <Header2_row className="px-10" />
           <div></div>
         </div>
       </div>
