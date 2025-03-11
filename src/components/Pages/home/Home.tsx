@@ -36,7 +36,7 @@ const categories = [
 const Home = () => {
   return (
     <>
-      <div className=" xl:px-32 w-full flex items-start justify-center py-5">
+      <div className=" h-full xl:px-32 w-full flex items-start justify-center py-5">
         <div className=" w-[25%] bg-yellow-700">
           <div>
             {/* jack */}
@@ -62,9 +62,11 @@ const Home = () => {
             {/* jack */}
           </div>
         </div>
-        <div className=" h-screen w-[70%] ">
+        <div className=" w-[70%] ">
           <Header2_row className="px-10" />
-          <div></div>
+          <div className=" w-full h-full bg-red-500">
+            <h1>hello</h1>
+          </div>
         </div>
       </div>
     </>
