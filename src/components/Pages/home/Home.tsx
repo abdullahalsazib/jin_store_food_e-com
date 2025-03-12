@@ -14,6 +14,7 @@ import {
   FaToiletPaper,
   FaBaby,
 } from "react-icons/fa";
+import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 const categories = [
   {
@@ -64,8 +65,28 @@ const Home = () => {
         </div>
         <div className=" w-[70%] ">
           <Header2_row className="px-10" />
-          <div className=" w-full h-full bg-red-500">
-            <h1>hello</h1>
+          <div className=" w-full h-full flex flex-col items-center justify-center">
+            <div className=" w-full">
+              <div className=" w-full relative">
+                <img
+                  className=" w-full p-1"
+                  src="./src/assets/home_image/div.slick-list.png"
+                  alt=""
+                />
+                <div className=" w-full flex flex-row justify-center items-center relative">
+                  <div className=" flex flex-row justify-between items-center px-4 py-2 absolute bottom-3  text-2xl bg-text-white rounded-full gap-10">
+                    <button className=" cursor-pointer hover:text-h-stock active:scale-110 active:text-text-primary duration-200">
+                      {" "}
+                      <BiLeftArrow />{" "}
+                    </button>
+                    <button className=" cursor-pointer hover:text-h-stock active:scale-110 active:text-text-primary duration-200">
+                      {" "}
+                      <BiRightArrow />{" "}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
