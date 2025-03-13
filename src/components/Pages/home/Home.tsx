@@ -90,8 +90,57 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* tistymonial */}
+      <div className="xl:px-32 w-full py-5 border-b-2 border-h-stock">
+        <BoxOfTistemoinal />
+      </div>
     </>
   );
 };
 
 export default Home;
+
+const D_BoxOfTistemoinal = [
+  {
+    name: "Payment only online",
+    desc: "Tasigförsamhet beteendedesign. Mobile checkout. Ylig kärrtorpa.",
+    img: "./src/assets/tastemoinal/t1.svg",
+  },
+  {
+    name: "New stocks and sales",
+    desc: "Tasigförsamhet beteendedesign. Mobile checkout. Ylig kärrtorpa.",
+    img: "./src/assets/tastemoinal/t2.svg",
+  },
+  {
+    name: "Quality assurance",
+    desc: "Tasigförsamhet beteendedesign. Mobile checkout. Ylig kärrtorpa.",
+    img: "./src/assets/tastemoinal/t3.svg",
+  },
+  {
+    name: "Delivery from 1 hour",
+    desc: "Tasigförsamhet beteendedesign. Mobile checkout. Ylig kärrtorpa.",
+    img: "./src/assets/tastemoinal/t4.svg",
+  },
+];
+const BoxOfTistemoinal = () => {
+  return (
+    <>
+      <div className=" w-full  flex items-center justify-center gap-10">
+        {D_BoxOfTistemoinal.map((item, index) => (
+          <div
+            key={index}
+            className="w-full flex flex-row items-center gap-5 font-bold text-black py-5"
+          >
+            <img className="w-24" src={item.img} alt="" />
+            <div>
+              <h1 className="font-bold font-f-playwrite  text-text-gray-black text-2xl">
+                {item.name}
+              </h1>
+              <p className=" text-sm font-normal ">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
