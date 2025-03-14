@@ -1,6 +1,9 @@
 import { MdDashboard } from "react-icons/md";
 import Header2_row from "../../../small-components/Header_Rows/Header2_row";
-
+import banner1 from "../../../assets/banner/banner-01.jpg.png";
+import banner2 from "../../../assets/banner/banner-02.jpg.png";
+import banner3 from "../../../assets/banner/banner-03.jpg.png";
+import banner4 from "../../../assets/banner/banner-04.jpg.png";
 import {
   FaAppleAlt,
   FaDrumstickBite,
@@ -91,8 +94,12 @@ const Home = () => {
         </div>
       </div>
       {/* tistymonial */}
-      <div className="xl:px-32 w-full py-5 border-b-2 border-h-stock">
+      <div className="xl:px-32 w-full py-5">
         <BoxOfTistemoinal />
+      </div>
+      {/* banner on home */}
+      <div className=" w-full xl:px-32 py-5 border-b-2 border-h-stock">
+        
       </div>
     </>
   );
@@ -125,7 +132,7 @@ const D_BoxOfTistemoinal = [
 const BoxOfTistemoinal = () => {
   return (
     <>
-      <div className=" w-full  flex items-center justify-center gap-10">
+      <div className=" w-full  flex items-center justify-center gap-10  border-b-2 border-h-stock">
         {D_BoxOfTistemoinal.map((item, index) => (
           <div
             key={index}
