@@ -37,6 +37,7 @@ const categories = [
   { name: "Baby & Pregnancy", icon: FaBaby, route: "/baby-pregnancy" },
 ];
 
+// add git commit and push on github
 const Home = () => {
   return (
     <>
